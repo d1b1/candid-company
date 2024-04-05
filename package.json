@@ -1,11 +1,11 @@
 {
-  "name": "demo-infinite-scroll",
+  "name": "Candid-Company",
   "version": "1.0.0",
   "description": "Demo code illustrating how to do an infinite scroll search results with Algolia",
   "main": "",
   "scripts": {
     "start": "./scripts/serve",
-    "build": "./scripts/build",
+    "build": "webpack",
     "lint": "./scripts/lint",
     "deploy": "./scripts/deploy"
   },
