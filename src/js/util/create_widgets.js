@@ -3,9 +3,6 @@ var infiniteScrollWidget = require('../search/widgets/infinite_scroll.js');
 
 module.exports = function (indexName) {
   return [
-    // instantsearch.widgets.configure({
-      
-    // }),
     instantsearch.widgets.searchBox({
       container: '#search-input'
     }),
