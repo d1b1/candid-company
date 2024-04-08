@@ -1,0 +1,58 @@
+html {
+  overflow-y: scroll;
+  font-family: 'arial, Helvetica, sans-serif';
+}
+
+.shadow-box {
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.shadow-box:hover {
+  box-shadow: -8px 0 8px -8px rgba(0, 0, 0, 0.2), 8px 0 8px -8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body { 
+  min-height: 100px;
+}
+
+.card-img-top {
+  border-radius: 50%;
+}
+
+.ais-refinement-list--list {
+  min-width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ais-refinement-list--item {
+  display: inline-block;
+  background-color: #DFDFDF;
+  color: gray;
+  padding: 5px 10px;
+  margin-right: 3px;
+  border-radius: 6px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.ais-refinement-list--item__active {
+  background-color: gray;
+  color: white;
+}
+
+.ais-refinement-list--item__active .ais-refinement-list--label::before {
+  content: "\2713   ";
+  color: white;
+  white-space: nowrap;
+}
+
+.ais-refinement-list--checkbox {
+  display: none;
+}
+
+.ais-refinement-list--count {
+  display: none;
+}
+/*# sourceMappingURL=app.css.map*/
