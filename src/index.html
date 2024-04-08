@@ -2,53 +2,10 @@
 <html>
   <head>
     <title>Candid Company Members</title>
-    <meta name="description" content="Example of an infinite scroll implementation using Algolia's instantsearch.js">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
+    <meta name="description" content="Search and find Venture Lane Members.">
     <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="shortcut icon" href="./favicon.ico">
   </head>
   <body class="m-5">
-
-    <style>
-      .ais-refinement-list--list {
-        min-width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .ais-refinement-list--item {
-        display: inline-block;
-        background-color: #DFDFDF; /* Your chosen color */
-        color: gray;
-        padding: 5px 10px;
-        margin-right: 3px;
-        border-radius: 6px;
-        font-size: 14px;
-        text-transform: capitalize;
-      }
-
-      .ais-refinement-list--item__active {
-        background-color: gray;
-        color: white;
-      }
-
-      /* // */
-
-      .ais-refinement-list--item__active .ais-refinement-list--label::before {
-          content: "\2713 ";
-          color: white;
-          white-space: nowrap;
-      }
-
-      .ais-refinement-list--checkbox {
-        display: none;
-      }
-
-      .ais-refinement-list--count {
-        display: none;
-      }
-    </style>
 
     <div class="mt-2 container-fluid">
        <div class="row">
@@ -64,8 +21,8 @@
       <div class="row justify-content-center">
         {{#hits}}
           <div class="card m-2 shadow-box" style="width: 18rem;">
-            <img src="https://raw.githubusercontent.com/d1b1/candid-company/master/data/headshots/{{image}}" class="card-img-top" style="border-radius: 50%;" alt="...">
-            <div class="card-body" style="min-heigth: 200px;">
+            <img src="https://raw.githubusercontent.com/d1b1/candid-company/master/data/headshots/{{image}}" class="card-img-top" alt="{{name}}">
+            <div class="card-body">
               <h5 class="card-title">
                 {{name}}
               </h5>
@@ -84,7 +41,7 @@
 
     <script type="text/html" id="no-results-template">
       <div id="no-results-message">
-        <p>We didn&rsquo;t find any results for the search <em>&ldquo;{{query}}&rdquo;</em></p>
+        <p>We didn&rsquo;t find any results.</p>
         <a href="#" class="clear-all">Clear all</a>
       </div>
     </script>
