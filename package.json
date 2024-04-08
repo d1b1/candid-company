@@ -1,7 +1,7 @@
 {
-  "name": "demo-infinite-scroll",
-  "version": "1.0.0",
-  "description": "Demo code illustrating how to do an infinite scroll search results with Algolia",
+  "name": "candid_company",
+  "version": "1.0.3",
+  "description": "Full Text search engine POC for networking event attentees.",
   "main": "",
   "scripts": {
     "start": "./scripts/serve",
