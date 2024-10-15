@@ -59,8 +59,8 @@ base(tableName).select({
           p.push(downloadImage(record.fields.headshot[0].url, savePath));
         }
 
-        if (record.fields['Spring 2024']) {
-          record.fields.statusTags = [ 'Spring 2024']
+        if (record.fields['Fall 2024']) {
+          record.fields.statusTags = [ 'Fall 2024']
         } else {
           record.fields.statusTags = [ 'Past']
         }
@@ -75,7 +75,7 @@ base(tableName).select({
     
 }, (err) => {
     if (err) {
-        console.error('Error fetching records:', err);
+        console.error('Error fetching records:', err.message);
     }
 
     console.log('All done. You have a new output file.');
