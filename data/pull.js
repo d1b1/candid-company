@@ -65,6 +65,12 @@ base(tableName).select({
           record.fields.statusTags = [ 'Past']
         }
 
+        if (!record.fields.tags) record.fields.tags = [];
+
+        if (record.fields['IsNew']) {
+          record.fields.tags.push('new');
+        } 
+
         data.push(record.fields);
     });
  
