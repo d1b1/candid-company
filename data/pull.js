@@ -27,9 +27,9 @@ const downloadImage = async (url, filePath) => {
 const imageUrl = 'https://example.com/image.jpg';
 const savePath = './downloaded_image.jpg';
 
-downloadImage(imageUrl, savePath)
-  .then(() => console.log('Image downloaded successfully'))
-  .catch((error) => console.error('Error downloading image:', error));
+// downloadImage(imageUrl, savePath)
+//   .then(() => console.log('Image downloaded successfully'))
+//   .catch((error) => console.error('Error downloading image:', error));
 
   
 // Configure Airtable with your API key and base ID
