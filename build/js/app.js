@@ -89,7 +89,7 @@
 	      useHash: true
 	    },
 	    searchParameters: {
-	      filters: 'statusTags: "Spring 2024"'
+	      filters: 'statusTags: "Fall 2024"'
 	    }
 	  });
 	
