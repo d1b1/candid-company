@@ -5,7 +5,7 @@ Event in the Spring of 2023 at Banyon.
 
 [Live Site](http://candid-company.StephanSmith.solutions)
 
-![Infinite Scroll](./screencast.png)
+![Infinite Scroll](./screenshot.png)
 
 ## Features
 
