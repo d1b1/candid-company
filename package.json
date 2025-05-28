@@ -13,6 +13,9 @@
     "algolia",
     "instantsearch"
   ],
+  "engines": {
+    "node": "20.9.1"
+  },
   "author": "Algolia",
   "devDependencies": {
     "algoliasearch": "^3.10.2",
